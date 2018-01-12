@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableDiscoveryClient
 @RestController
-public class ConsulApp {
+public class Run {
 
 	@RequestMapping("/home")
 	public Object home() {
@@ -18,6 +18,6 @@ public class ConsulApp {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConsulApp.class, args);
+		SpringApplication.run(Run.class, args);
 	}
 }
