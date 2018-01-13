@@ -1,0 +1,2 @@
+spring.cloud.consul.host=120.78.216.28
+spring.cloud.consul.port=8500
