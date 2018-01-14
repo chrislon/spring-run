@@ -1,6 +1,7 @@
 package com.hudiepp.test.run;
 
 import org.springframework.boot.SpringApplication;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Run {
 
-	@RequestMapping("/home")
+	@RequestMapping("/")
 	public Object home() {
 		System.out.println("1111111111111");
 		return "OK11";
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Run.class, args);
+		SpringApplication app = new SpringApplication();
+		app.run(Run.class, args);
 	}
 }
